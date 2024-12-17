@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+}
+
+.placeholder {
+    width: 550px;
+    height: 250px;
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+.information .header-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+.card {
+    width: 190px;
+    height: 200px;
+    border: 4px solid blue;
+    border-radius: 24px;
+}
+
+.flex-container.cards {
+    margin-bottom: 50px;
+}
+
+.grey-background {    /* try section */
+    background-color: #E5E7EB;
+}
+
+.action {
+    background-color: #3882F6;
+}
+
+.footer {
+    color: #E5E7EB;
+}
+
+.quote .italic-quote {
+    display: flex;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+.quote .flex-container {
+    flex-direction: column;
+}
+.quote {
+    display: flex;
+    justify-content: center;
+}
+.quote .author {
+    align-self: end;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.author {
+    padding-right: 20px;
+    margin-top: 5px;
+}
+.italic-quote {
+    padding: 0 20px;
+}
+
+.footer {
+    display: flex;
+}
+
+.stand-size {
+    /* display: flex; */
+    flex: 1; /* remove? */
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    height: 60px;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+}
+
+.flex-container.action {    /* margin is not working if make only .action, why? */
+    height: 150px;
+    color: white;
+    margin: 100px auto;     /* 100px margin-top and margin-bottom, auto makes center left and right */
+    border-radius: 8px;
+}
+
+.action .flex-container {
+    gap: 200px;      /* justify content is not working, why? (margin is 154k or something, because its "margin: 100 auto") */
+}
+
+.action-text {
+    font-size: 18px;
+}
+.action-text h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.grey {
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+}
+
+.cards {
+    gap: 40px;
+}
+
+.flex-container.information {
+    flex-direction: column;
+    /* gap: 50px; */    /* if do this, then card cannot have margin top and bottom */
+}
+.card {
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    cursor: pointer;
+
+    font-size: large;
+    font-weight: bold;
+    padding: 8px 32px;
+    border-radius: 8px;
+    border: 2px solid #3882F6;
+}
+
+button:hover {
+    background-color: #629bf7;
+}
+
+.action button {
+    border: 2px solid white;
+}
+
+/* mess start */
+
+.flex-container {
+    display: flex;
+    max-width: 1150px;
+    margin: 0 auto;     /* everything is in the middle */
+    padding: 0 30px;    /* padding 30px left and right when shrinks */
+    align-items: center;
+}
+
+.action {
+    max-width: 1050px;
+}
+.quote {
+    max-width: 1000px;
+}
+
+.hero-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.information {
+    max-width: 1000px;
+}
+
+/*
+.section {
+    max-width: 1000px;
+}
+
+.header, .section {
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header {
+    max-width: 1150px;
+}
+.section {
+    max-width: 1000px;
+}
+*/
+
+.header .flex-container {
+    justify-content: space-between;
+}
+
+.hero {
+    gap: 100px;
+}
+
+/* mess end */
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.header a:hover {
+    color: lightgray;
+}
+
+.header, .footer-background {
+    background-color: #1F2937;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.header p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header .logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
