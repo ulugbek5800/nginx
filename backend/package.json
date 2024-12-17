@@ -1,0 +1,17 @@
+{
+  "name": "nginx",
+  "version": "1.0.0",
+  "description": "A Node.js application serving HTML file",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ulugbek5800",
+  "license": "MIT",
+  
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
