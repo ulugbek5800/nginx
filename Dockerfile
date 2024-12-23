@@ -2,11 +2,11 @@ FROM node:14
 
 WORKDIR /app
 
-COPY backend/ ./backend
-COPY frontend/ ./frontend
+COPY server/ ./server
+COPY static/ ./static
 COPY .gitignore .
 
-WORKDIR /app/backend/
+WORKDIR /app/server/
 RUN npm install
 
 EXPOSE 3000
