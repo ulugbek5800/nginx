@@ -11,10 +11,10 @@ app.get('/info', (req, res) => {
 });
 
 // Serve static files from the frontend (css, images)
-app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(express.static(path.join(__dirname, '../static')));
 
 app.use('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/index.html'));
+    res.sendFile(path.join(__dirname, '../static/index.html'));
     console.log(`Request served by ${appName}`);
 });
 
